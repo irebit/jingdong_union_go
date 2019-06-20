@@ -113,7 +113,7 @@ func (app *App) JdUnionOpenGoodsQuery(params map[string]interface{}) (result *Jd
 	body, err := app.Request("jd.union.open.goods.query", map[string]interface{}{"goodsReqDTO": params})
 	resp := &JdUnionOpenGoodsQueryResponseTopLevel{}
 	if err != nil {
-		log.Println(body)
+		log.Println(string(body))
 		return
 	}
 

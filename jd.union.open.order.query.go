@@ -75,7 +75,7 @@ func (app *App) JdUnionOpenOrderQuery(params map[string]interface{}) (result *Jd
 	body, err := app.Request("jd.union.open.order.query", map[string]interface{}{"orderReq": params})
 	resp := &JdUnionOpenOrderQueryResponseTopLevel{}
 	if err != nil {
-		log.Println(body)
+		log.Println(string(body))
 		return
 	}
 

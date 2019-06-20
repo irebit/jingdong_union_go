@@ -6,11 +6,32 @@ import (
 	"testing"
 )
 
+var app = &App{
+	Key:    "",
+	Secret: "",
+}
+
+//获取商品类目
+func TestOpenCategoryGoodsGet(t *testing.T) {
+	res, err := app.JdUnionOpenCategoryGoodsGet(map[string]interface{}{
+		"parentId": 0,
+		"grade":    0,
+	})
+	log.Println(res, err)
+}
+
+func TestOpenGoodsJingfenQuery(t *testing.T) {
+	res, err := app.JdUnionOpenGoodsJingfenQuery(map[string]interface{}{
+		"eliteId":   1,
+		"sortName":  "price",
+		"sort":      "asc",
+		"pageIndex": 1,
+		"pageSize":  10,
+	})
+	log.Println(res, err)
+}
+
 func TestOpenGoodsQuery(t *testing.T) {
-	app := &App{
-		Key:    "5510523a691c199aa038c637e59acf03",
-		Secret: "28e4b19760e14f9fa83f333d07929a20",
-	}
 
 	//单品查询
 	res, err := app.JdUnionOpenGoodsQuery(map[string]interface{}{
@@ -34,10 +55,6 @@ func TestOpenGoodsQuery(t *testing.T) {
 
 //获取商品订单
 func TestOpenOrderQuery(t *testing.T) {
-	app := &App{
-		Key:    "5510523a691c199aa038c637e59acf03",
-		Secret: "28e4b19760e14f9fa83f333d07929a20",
-	}
 
 	//单品查询
 	res, err := app.JdUnionOpenOrderQuery(map[string]interface{}{
@@ -54,11 +71,6 @@ func TestOpenOrderQuery(t *testing.T) {
 //https://wqitem.jd.com/item/view?sku=
 func TestOpenPromotionBySubUnionIdGet(t *testing.T) {
 	skuId := 43415523405
-	log.Println(fmt.Sprintf("https://wqitem.jd.com/item/view?sku=%d", skuId))
-	app := &App{
-		Key:    "5510523a691c199aa038c637e59acf03",
-		Secret: "28e4b19760e14f9fa83f333d07929a20",
-	}
 	res, err := app.JdUnionOpenPromotionBysubunionidGet(map[string]interface{}{
 		"subUnionId": "{\"u\":\"1020\"}",
 		"positionId": 1000,

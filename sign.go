@@ -7,8 +7,6 @@ import (
 	"sort"
 	"strconv"
 	"strings"
-
-	"log"
 )
 
 func GetSign(clientSecret string, p map[string]interface{}) string {
@@ -24,7 +22,7 @@ func GetSign(clientSecret string, p map[string]interface{}) string {
 		signStr += key + GetString(p[key])
 	}
 	signStr += clientSecret
-	log.Println(signStr, "=", md5Hash(signStr))
+	// log.Println(signStr, "=", md5Hash(signStr))
 	return md5Hash(signStr)
 }
 
