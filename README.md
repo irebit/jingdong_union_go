@@ -42,13 +42,24 @@ go test -v *.go
 ### 接口调用
 
 ``` golang
+    package main 
+
+    import (
+        "fmt"
+        "log"
+        "testing"
+    )
+
     var app = &App{
-        Key:    "xxxxxxx",
-        Secret: "xxxxxxx",
+        ID:     "xxxxxx",
+        Key:    "xxxxxx",
+        Secret: "xxxxxx",
     }
+
     res, err := app.JdUnionOpenCategoryGoodsGet(map[string]interface{}{
         "parentId": 0,
         "grade":    0,
     })
+    
     log.Println(res, err)
 ```
