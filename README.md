@@ -45,12 +45,11 @@ go test -v *.go
     package main 
 
     import (
-        "fmt"
-        "log"
-        "testing"
+        "github.com/irebit/jingdong_union_go"
+        "logßß"
     )
 
-    var app = &App{
+    var app = &jingdong_union_go.App{
         ID:     "xxxxxx",
         Key:    "xxxxxx",
         Secret: "xxxxxx",
@@ -60,6 +59,6 @@ go test -v *.go
         "parentId": 0,
         "grade":    0,
     })
-    
+
     log.Println(res, err)
 ```
