@@ -47,8 +47,8 @@ go test -v *.go
         Secret: "xxxxxxx",
     }
     res, err := app.JdUnionOpenCategoryGoodsGet(map[string]interface{}{
-            "parentId": 0,
-            "grade":    0,
-        })
-        log.Println(res, err)
+        "parentId": 0,
+        "grade":    0,
+    })
+    log.Println(res, err)
 ```

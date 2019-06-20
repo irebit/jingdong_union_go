@@ -7,8 +7,8 @@ import (
 )
 
 var app = &App{
-	Key:    "",
-	Secret: "",
+	Key:    "7a043997b34c1d1e385f37570b7b3f57",
+	Secret: "9b5e8e39e7a440538f10acd8023fe1a3",
 }
 
 //获取商品类目
@@ -49,6 +49,14 @@ func TestOpenGoodsQuery(t *testing.T) {
 		"pageIndex":            1,
 		"pageSize":             10,
 		"cid1":                 1315,
+	})
+	log.Println(res, err)
+}
+
+//获取单品信息
+func TestOpenGoodsPromotionGoodsInfoQuery(t *testing.T) {
+	res, err := app.JdUnionOpenGoodsPromotiongoodsinfoQuery(map[string]interface{}{
+		"skuIds": "30881878056",
 	})
 	log.Println(res, err)
 }
