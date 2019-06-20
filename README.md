@@ -46,7 +46,7 @@ go test -v *.go
 
     import (
         "github.com/irebit/jingdong_union_go"
-        "logßß"
+        "log"
     )
 
     var app = &jingdong_union_go.App{
