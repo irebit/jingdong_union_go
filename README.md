@@ -9,8 +9,8 @@
 #### 通用API
 - [x] [订单查询接口 jd.union.open.order.query](https://union.jd.com/openplatform/api/650)
 - [x] [京粉精选商品查询接口 jd.union.open.goods.jingfen.query](https://union.jd.com/openplatform/api/739)
-- [ ] [获取推广商品信息接口 jd.union.open.goods.promotiongoodsinfo.query]()
-- [ ] [获取通用推广链接 jd.union.open.promotion.common.get]()
+- [x] [获取推广商品信息接口 jd.union.open.goods.promotiongoodsinfo.query](https://union.jd.com/openplatform/api/563)
+- [x] [获取通用推广链接 jd.union.open.promotion.common.get](https://union.jd.com/openplatform/debug/691)
 - [x] [商品类目查询 jd.union.open.category.goods.get](https://union.jd.com/openplatform/api/693)
 
 #### 高级API

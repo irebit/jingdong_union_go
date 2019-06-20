@@ -7,9 +7,9 @@ import (
 )
 
 var app = &App{
-	ID:     "1828155095",
-	Key:    "7a043997b34c1d1e385f37570b7b3f57",
-	Secret: "9b5e8e39e7a440538f10acd8023fe1a3",
+	ID:     "xxxxxx",
+	Key:    "xxxxxx",
+	Secret: "xxxxxx",
 }
 
 //获取商品类目
