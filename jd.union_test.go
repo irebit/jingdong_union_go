@@ -7,6 +7,7 @@ import (
 )
 
 var app = &App{
+	ID:     "1828155095",
 	Key:    "7a043997b34c1d1e385f37570b7b3f57",
 	Secret: "9b5e8e39e7a440538f10acd8023fe1a3",
 }
@@ -57,6 +58,19 @@ func TestOpenGoodsQuery(t *testing.T) {
 func TestOpenGoodsPromotionGoodsInfoQuery(t *testing.T) {
 	res, err := app.JdUnionOpenGoodsPromotiongoodsinfoQuery(map[string]interface{}{
 		"skuIds": "30881878056",
+	})
+	log.Println(res, err)
+}
+
+//获取通用推广链接
+func TestOpenPromotionCommonGet(t *testing.T) {
+	res, err := app.JdUnionOpenPromotionCommonGet(map[string]interface{}{
+		"subUnionId": "test_subunionid",
+		"ext1":       "test_ext",
+		"siteId":     app.ID,
+		"materialId": "https://wqitem.jd.com/item/view?sku=43415523405",
+		"positionId": 1000,
+		"couponUrl":  "http://coupon.jd.com/ilink/couponSendFront/send_index.action?key=02d2b6ff587c42fda6d4cac7ff1c2d6a&roleId=20498843&to=mall.jd.com/index-821028.html",
 	})
 	log.Println(res, err)
 }
