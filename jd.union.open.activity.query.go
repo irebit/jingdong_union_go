@@ -20,7 +20,7 @@ type JdUnionOpenActivityQueryResult struct {
 	Data       []*JdUnionOpenActivityQueryData `json:"data"`
 	Message    string                          `json:"message"`
 	TotalCount int                             `json:"totalCount"`
-	RequestId  string                          `json:"requestId"`
+	RequestID  string                          `json:"requestId"`
 }
 
 type JdUnionOpenActivityQueryData struct {
@@ -30,10 +30,10 @@ type JdUnionOpenActivityQueryData struct {
 	DownloadCode string                           `json:"downloadCode"`
 	DownloadUrl  string                           `json:"downloadUrl"`
 	EndTime      int                              `json:"endTime"`
-	Id           int                              `json:"id"`
+	ID           int                              `json:"id"`
 	PlatformType int                              `json:"platformType"`
 	StartTime    int                              `json:"startTime"`
-	Tag          int                              `json:"tag"`
+	Tag          string                           `json:"tag"`
 	Title        string                           `json:"title"`
 	UpdateTime   int                              `json:"updateTime"`
 	UrlM         string                           `json:"urlM"`
@@ -43,7 +43,7 @@ type JdUnionOpenActivityQueryData struct {
 }
 
 type JdUnionOpenActivityQueryCate struct {
-	CategoryId int `json:"categoryId"`
+	CategoryID int `json:"categoryId"`
 	Type       int `json:"type"`
 }
 
