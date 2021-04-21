@@ -7,9 +7,9 @@ import (
 )
 
 var app = &App{
-	ID:     "xxxxxx",
-	Key:    "xxxxxx",
-	Secret: "xxxxxx",
+	ID:     "xxxxx",
+	Key:    "xxxxx",
+	Secret: "xxxxx",
 }
 
 //获取商品类目
@@ -19,6 +19,17 @@ func TestOpenCategoryGoodsGet(t *testing.T) {
 		"grade":    0,
 	})
 	log.Println(res, err)
+}
+
+//获取活动列表
+func TestOpenActivityQuery(t *testing.T) {
+	res, err := app.JdUnionOpenActivityQuery(map[string]interface{}{
+		"pageIndex":  1,
+		"pageSize":   50,
+		"poolId":     6, //活动物料ID，1：营销日历热门会场；2：营销日历热门榜单；6：PC站长端官方活动
+		"activeDate": "20210421",
+	})
+	log.Println(len(res.Data), res.TotalCount, err)
 }
 
 func TestOpenGoodsJingfenQuery(t *testing.T) {
