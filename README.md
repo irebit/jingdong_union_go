@@ -17,6 +17,14 @@
 
 - [x] [商品类目查询 jd.union.open.category.goods.get](https://union.jd.com/openplatform/api/693)
 
+- [x] [活动查询接口 jd.union.open.activity.query](https://union.jd.com/openplatform/api/12667)
+
+- [x] [商品详情查询接口 jd.union.open.goods.bigfield.query](https://union.jd.com/openplatform/api/11248)
+
+- [x] [订单行查询接口 jd.union.open.order.row.query](https://union.jd.com/openplatform/api/12707)
+
+- [x] [猜你喜欢商品推荐 jd.union.open.goods.material.query](https://union.jd.com/openplatform/api/13625)
+
 #### 高级API
 - [x] [关键词商品查询接口【申请】jd.union.open.goods.query](https://union.jd.com/openplatform/api/628)
 - [ ] [秒杀商品查询接口【申请】 jd.union.open.goods.seckill.query]()
