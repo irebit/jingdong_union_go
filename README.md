@@ -25,6 +25,12 @@
 
 - [x] [猜你喜欢商品推荐 jd.union.open.goods.material.query](https://union.jd.com/openplatform/api/13625)
 
+- [x] [礼金创建 jd.union.open.coupon.gift.get](https://union.jd.com/openplatform/api/12246)
+
+- [x] [礼金停止 jd.union.open.coupon.gift.stop](https://union.jd.com/openplatform/api/12240)
+
+- [x] [礼金效果数据 jd.union.open.statistics.giftcoupon.query](https://union.jd.com/openplatform/api/12248)
+
 #### 高级API
 - [x] [关键词商品查询接口【申请】jd.union.open.goods.query](https://union.jd.com/openplatform/api/628)
 - [ ] [秒杀商品查询接口【申请】 jd.union.open.goods.seckill.query]()

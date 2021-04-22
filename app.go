@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"net/url"
 	"time"
@@ -46,9 +47,9 @@ func (app *App) Request(method string, paramJSON map[string]interface{}) ([]byte
 	paramJSONStr, _ := json.Marshal(paramJSON)
 	params["param_json"] = string(paramJSONStr)
 	params["sign"] = GetSign(app.Secret, params)
-
+	log.Printf("Request: %s, %v", RouterURL, params)
 	resp, err := http.PostForm(RouterURL, app.Values(params))
-
+	log.Printf("Response:%v %v", resp, err)
 	if err != nil {
 		return nil, err
 	}
