@@ -7,11 +7,11 @@ import (
 )
 
 type JdUnionOpenGoodsMaterialQueryTopLevel struct {
-	JdUnionOpenGoodsMaterialQueryResponse JdUnionOpenGoodsMaterialQueryResponse `json:"jd_union_open_goods_material_query_response"`
+	JdUnionOpenGoodsMaterialQueryResponse JdUnionOpenGoodsMaterialQueryResponse `json:"jd_union_open_goods_material_query_responce"`
 }
 
 type JdUnionOpenGoodsMaterialQueryResponse struct {
-	Result string `json:"result"`
+	Result string `json:"queryResult"`
 	Code   string `json:"code"`
 }
 

@@ -7,11 +7,11 @@ import (
 )
 
 type JdUnionOpenCategoryGoodsGetTopLevel struct {
-	JdUnionOpenCategoryGoodsGetResponse JdUnionOpenCategoryGoodsGetResponse `json:"jd_union_open_category_goods_get_response"`
+	JdUnionOpenCategoryGoodsGetResponse JdUnionOpenCategoryGoodsGetResponse `json:"jd_union_open_category_goods_get_responce"`
 }
 
 type JdUnionOpenCategoryGoodsGetResponse struct {
-	Result string `json:"result"`
+	Result string `json:"queryResult"`
 	Code   string `json:"code"`
 }
 

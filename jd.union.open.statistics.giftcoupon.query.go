@@ -9,11 +9,11 @@ import (
 )
 
 type JdUnionOpenStatisticsGiftcouponQueryTopLevel struct {
-	JdUnionOpenStatisticsGiftcouponQueryResponse JdUnionOpenStatisticsGiftcouponQueryResponse `json:"jd_union_open_statistics_giftcoupon_query_response"`
+	JdUnionOpenStatisticsGiftcouponQueryResponse JdUnionOpenStatisticsGiftcouponQueryResponse `json:"jd_union_open_statistics_giftcoupon_query_responce"`
 }
 
 type JdUnionOpenStatisticsGiftcouponQueryResponse struct {
-	Result string `json:"result"`
+	Result string `json:"queryResult"`
 	Code   string `json:"code"`
 }
 

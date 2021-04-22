@@ -7,11 +7,11 @@ import (
 )
 
 type JdUnionOpenGoodsBigfieldQueryTopLevel struct {
-	JdUnionOpenGoodsBigfieldQueryResponse JdUnionOpenGoodsBigfieldQueryResponse `json:"jd_union_open_goods_bigfield_query_response"`
+	JdUnionOpenGoodsBigfieldQueryResponse JdUnionOpenGoodsBigfieldQueryResponse `json:"jd_union_open_goods_bigfield_query_responce"`
 }
 
 type JdUnionOpenGoodsBigfieldQueryResponse struct {
-	Result string `json:"result"`
+	Result string `json:"queryResult"`
 	Code   string `json:"code"`
 }
 

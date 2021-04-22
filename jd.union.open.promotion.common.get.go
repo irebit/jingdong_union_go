@@ -7,11 +7,11 @@ import (
 )
 
 type JdUnionOpenPromotionCommonGetTopLevel struct {
-	JdUnionOpenPromotionCommonGetResponse JdUnionOpenPromotionCommonGetResponse `json:"jd_union_open_promotion_common_get_response"`
+	JdUnionOpenPromotionCommonGetResponse JdUnionOpenPromotionCommonGetResponse `json:"jd_union_open_promotion_common_get_responce"`
 }
 
 type JdUnionOpenPromotionCommonGetResponse struct {
-	Result string `json:"result"`
+	Result string `json:"queryResult"`
 	Code   string `json:"code"`
 }
 

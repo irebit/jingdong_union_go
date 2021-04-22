@@ -30,7 +30,7 @@ type ErrorResponse struct {
 	Msg  string `json:"msg"`
 }
 
-const RouterURL = "https://router.jd.com/api"
+const RouterURL = "https://api.jd.com/routerjson"
 const RequestMethod = "POST"
 
 func (app *App) Request(method string, paramJSON map[string]interface{}) ([]byte, error) {
@@ -45,11 +45,11 @@ func (app *App) Request(method string, paramJSON map[string]interface{}) ([]byte
 
 	// api params
 	paramJSONStr, _ := json.Marshal(paramJSON)
-	params["param_json"] = string(paramJSONStr)
+	params["360buy_param_json"] = string(paramJSONStr)
 	params["sign"] = GetSign(app.Secret, params)
 	log.Printf("Request: %s, %v", RouterURL, params)
 	resp, err := http.PostForm(RouterURL, app.Values(params))
-	log.Printf("Response:%v %v", resp, err)
+	log.Printf("Responce:%v %v", resp, err)
 	if err != nil {
 		return nil, err
 	}

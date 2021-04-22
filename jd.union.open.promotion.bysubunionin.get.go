@@ -7,11 +7,11 @@ import (
 )
 
 type JdUnionOpenPromotionBysubunionidGetTopLevel struct {
-	JdUnionOpenPromotionBysubunionidGetResponse JdUnionOpenPromotionBysubunionidGetResponse `json:"jd_union_open_promotion_bysubunionid_get_response"`
+	JdUnionOpenPromotionBysubunionidGetResponse JdUnionOpenPromotionBysubunionidGetResponse `json:"jd_union_open_promotion_bysubunionid_get_responce"`
 }
 
 type JdUnionOpenPromotionBysubunionidGetResponse struct {
-	Result string `json:"result"`
+	Result string `json:"queryResult"`
 	Code   string `json:"code"`
 }
 

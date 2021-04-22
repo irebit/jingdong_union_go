@@ -7,11 +7,11 @@ import (
 )
 
 type JdUnionOpenGoodsJingfenQueryTopLevel struct {
-	JdUnionOpenGoodsJingfenQueryResponse JdUnionOpenGoodsJingfenQueryResponse `json:"jd_union_open_goods_jingfen_query_response"`
+	JdUnionOpenGoodsJingfenQueryResponse JdUnionOpenGoodsJingfenQueryResponse `json:"jd_union_open_goods_jingfen_query_responce"`
 }
 
 type JdUnionOpenGoodsJingfenQueryResponse struct {
-	Result string `json:"result"`
+	Result string `json:"queryResult"`
 	Code   string `json:"code"`
 }
 

@@ -7,11 +7,11 @@ import (
 )
 
 type JdUnionOpenActivityQueryTopLevel struct {
-	JdUnionOpenActivityQueryResponse JdUnionOpenActivityQueryResponse `json:"jd_union_open_activity_query_response"`
+	JdUnionOpenActivityQueryResponse JdUnionOpenActivityQueryResponse `json:"jd_union_open_activity_query_responce"`
 }
 
 type JdUnionOpenActivityQueryResponse struct {
-	Result string `json:"result"`
+	Result string `json:"queryResult"`
 	Code   string `json:"code"`
 }
 

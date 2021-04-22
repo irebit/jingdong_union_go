@@ -7,11 +7,11 @@ import (
 )
 
 type JdUnionOpenCouponGiftGetTopLevel struct {
-	JdUnionOpenCouponGiftGetResponse JdUnionOpenCouponGiftGetResponse `json:"jd_union_open_coupon_gift_get_response"`
+	JdUnionOpenCouponGiftGetResponse JdUnionOpenCouponGiftGetResponse `json:"jd_union_open_coupon_gift_get_responce"`
 }
 
 type JdUnionOpenCouponGiftGetResponse struct {
-	Result string `json:"result"`
+	Result string `json:"queryResult"`
 	Code   string `json:"code"`
 }
 
