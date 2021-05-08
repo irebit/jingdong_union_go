@@ -11,7 +11,7 @@ type JdUnionOpenCouponGiftGetTopLevel struct {
 }
 
 type JdUnionOpenCouponGiftGetResponse struct {
-	Result string `json:"queryResult"`
+	Result string `json:"getResult"`
 	Code   string `json:"code"`
 }
 
@@ -28,7 +28,7 @@ type CouponGift struct {
 
 func (app *App) JdUnionOpenCouponGiftGet(params map[string]interface{}) (result *JdUnionOpenCouponGiftGetResult, err error) {
 
-	body, err := app.Request("jd.union.open.coupon.gift.stop", map[string]interface{}{"couponReq": params})
+	body, err := app.Request("jd.union.open.coupon.gift.get", map[string]interface{}{"couponReq": params})
 	log.Println(string(body))
 	resp := &JdUnionOpenCouponGiftGetTopLevel{}
 	if err != nil {

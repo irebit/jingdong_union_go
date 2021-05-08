@@ -11,7 +11,7 @@ type JdUnionOpenPromotionCommonGetTopLevel struct {
 }
 
 type JdUnionOpenPromotionCommonGetResponse struct {
-	Result string `json:"queryResult"`
+	Result string `json:"getResult"`
 	Code   string `json:"code"`
 }
 
@@ -34,7 +34,7 @@ func (app *App) JdUnionOpenPromotionCommonGet(params map[string]interface{}) (re
 		log.Println(string(body))
 		return
 	}
-
+	log.Printf("%v", string(body))
 	if err = json.Unmarshal(body, resp); err != nil {
 		return
 	}
