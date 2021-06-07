@@ -101,6 +101,7 @@ func (app *App) JdUnionOpenOrderRowQuery(params map[string]interface{}) (result 
 		if err = json.Unmarshal([]byte(resp.JdUnionOpenOrderRowQueryResponse.Result), result); err != nil {
 			return
 		}
+
 	} else {
 		err = errors.New("result is null")
 	}
