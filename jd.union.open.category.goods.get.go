@@ -11,7 +11,7 @@ type JdUnionOpenCategoryGoodsGetTopLevel struct {
 }
 
 type JdUnionOpenCategoryGoodsGetResponse struct {
-	Result string `json:"queryResult"`
+	Result string `json:"getResult"`
 	Code   string `json:"code"`
 }
 
